@@ -1,6 +1,16 @@
-function startStudy() {
-    alert("Study Time Started! You can take the quiz after 30 minutes.");
-    setTimeout(() => {
-        document.getElementById('quizSection').style.display = 'block';
-    }, 30 * 60 * 1000);
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username === 'admin' && password === 'admin123') {
+        window.location.href = 'admin-dashboard.html';
+    } else if (username === 'nangi' && password === 'nangi123') {
+        window.location.href = 'student-dashboard.html';
+    } else {
+        document.getElementById('error').innerText = 'වැරදි Username හෝ Password!';
+    }
+}
+
+function logout() {
+    alert('Logged out!');
 }

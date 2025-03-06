@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Nangi Study Tracker</title>
+    <title>Login - Study Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Nangi's Study Tracker</h1>
-    <p>Today's Study Plan will appear here.</p>
-    <button onclick="startStudy()">Start Studying</button>
-    <div id="quizSection" style="display:none;">
-        <a href="quiz.html">Take the Quiz</a>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="error" class="error"></p>
     </div>
     <script src="script.js"></script>
 </body>
