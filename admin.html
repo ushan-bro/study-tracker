@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard - Study Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome Admin!</h2>
+        <textarea id="todayPlan" placeholder="Add Today's Study Plan"></textarea>
+        <input type="text" id="quizQuestion" placeholder="Add Quiz Question">
+        <input type="text" id="quizAnswer" placeholder="Correct Answer">
+        <button onclick="savePlan()">Save Plan & Quiz</button>
+        <hr>
+        <h3>Nangi's Scores</h3>
+        <ul id="scoreList"></ul>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
